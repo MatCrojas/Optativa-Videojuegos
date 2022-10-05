@@ -11,6 +11,7 @@ public class PlatfformsSpawn : MonoBehaviour
     void Start()
     {
         StartCoroutine("spawnPlatform");
+        Time.timeScale = 1f;
     }
 
 
@@ -25,7 +26,7 @@ public class PlatfformsSpawn : MonoBehaviour
                 instance.transform.localScale.y,
                 Random.Range(randRange.x, randRange.y));
 
-            Time.timeScale *= 1.1f;
+            Time.timeScale *= 1.02f;
             
         }
     }

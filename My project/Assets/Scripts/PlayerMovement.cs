@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Verifica que el cubo dejo el suelo, y no permite saltar nuevamente hasta que lo toque
-        if (Input.GetKeyDown(KeyCode.Space) && transform.position.y <= 1.1 && transform.position.y >= 0)
+        if (Input.GetKeyDown(KeyCode.Space) && transform.position.y <= 1.1 && transform.position.y >= 0 && _rigidbody.velocity.magnitude < 0.1)
         {
             _rigidbody.AddForce(Vector3.up * _jumpForce);
         }
