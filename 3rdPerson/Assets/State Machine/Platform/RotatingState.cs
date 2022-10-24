@@ -19,7 +19,7 @@ public class RotatingState : PlatformBaseState
     {
 
         timer -= deltaTime;
-        Debug.Log("time-> " + timer);
+
         if (timer <= 0)
         {
             stateMachine.SwitchState(new MovementState(stateMachine));

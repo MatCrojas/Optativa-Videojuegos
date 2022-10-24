@@ -10,6 +10,7 @@ public class Target : MonoBehaviour
 
     private void onDestroy()
     {
-        OnDestroyed?.Invoke(this);
+        if (OnDestroyed != null) { OnDestroyed.Invoke(this); }
+        //OnDestroyed?.Invoke(this);
     }
 }

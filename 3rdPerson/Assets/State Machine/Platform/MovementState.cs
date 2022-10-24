@@ -21,11 +21,11 @@ public class MovementState : PlatformBaseState
 
         if (timer <= 0)
         {
-            stateMachine.SwitchState(new RotatingXState(stateMachine));
+            stateMachine.SwitchState(new MovementState(stateMachine));
         }
 
-        stateMachine.transform.Translate(
-    Vector3.up * 5f * deltaTime);
+        stateMachine.transform.Rotate(
+    Vector3.up, 5f * deltaTime);
 
     }
 

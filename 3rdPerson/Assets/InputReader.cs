@@ -45,6 +45,7 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 
     public void OnCancel(InputAction.CallbackContext context)
     {
-        throw new NotImplementedException();
+        if (!context.performed) { return; }
+        CancelEvent?.Invoke();
     }
 }

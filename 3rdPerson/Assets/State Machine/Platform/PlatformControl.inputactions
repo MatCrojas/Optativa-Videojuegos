@@ -1,0 +1,74 @@
+{
+    "name": "PlatformControl",
+    "maps": [
+        {
+            "name": "Platform",
+            "id": "72b09c1c-d12d-48e3-ad46-01061301ecc1",
+            "actions": [
+                {
+                    "name": "Rotate Y",
+                    "type": "Button",
+                    "id": "fed29028-6895-43eb-9a95-1c5713de1e2f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate X",
+                    "type": "Button",
+                    "id": "daf20c17-992f-4a57-a163-8ebf312e40bf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "61179a68-7ea5-4ca2-8afd-4cc2c13afe35",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "4eabc38b-23cd-4ebc-bee3-c846dfb87af9",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate Y",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e1bdfb91-795d-41af-b3d4-c33442073147",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate X",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83adfbec-37fb-42ae-a6d8-dda39c2ef9a1",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
